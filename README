@@ -1,0 +1,38 @@
+# Synthetic Dataset for Simple Linear Regression
+
+## Overview
+
+This dataset is generated synthetically for demonstrating simple linear regression. It contains 100 samples with a single feature `X` and a continuous target variable `y`.
+
+## Data Generation Process
+
+The dataset was generated using the following process:
+1. `X` values are randomly generated between 0 and 2.
+2. `y` values are calculated using the equation: `y = 4 + 3 * X + noise`, where noise is randomly added to introduce variability.
+
+## File Description
+
+- `synthetic_dataset.csv`: The CSV file containing the dataset with the following columns:
+  - `X`: Feature
+  - `y`: Target variable
+
+## Usage
+
+The dataset can be used for practicing linear regression techniques, including:
+- Splitting the data into training and testing sets
+- Training a linear regression model
+- Evaluating model performance using metrics such as Mean Squared Error (MSE) and R-squared (R²)
+- Visualizing the regression line and actual vs. predicted values
+
+## Example
+
+Here's an example of how to load and use the dataset in Python:
+
+```python
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('synthetic_dataset.csv')
+
+# Display the first few rows
+print(data.head())
